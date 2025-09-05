@@ -363,8 +363,7 @@ export default function HomePage() {
                 Sustainable Tomorrow
               </span>
             </h1>
-            {/* Added delayed side animation to subtitle with 5 second delay */}
-            <p className="text-xl text-green-700 mb-8 max-w-2xl mx-auto text-pretty leading-relaxed fade-in-delayed">
+            <p className="text-xl text-green-700 mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
               Join the world's most trusted carbon credit marketplace. Offset your emissions, support verified
               environmental projects, and make a real impact on climate change.
             </p>
@@ -466,7 +465,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
   <Card className="border-green-300 hover:border-green-600 transition-all duration-200 hover:shadow-[0_0_50px_rgba(34,197,94,0.9)] hover:-translate-y-5 group slide-in-left slide-in-delay-1 bg-green-100/70 backdrop-blur-md">
     <CardHeader className="text-center pb-4">
-      <div className="w-20 h-20 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-150 transition-transform duration-200 shadow-xl">
+      <div className="w-15 h-15 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-transform duration-200 shadow-xl">
         <Wallet className="w-10 h-10 text-green-700 group-hover:text-green-900 transition-colors duration-200" />
       </div>
       <CardTitle className="text-green-900 text-xl group-hover:scale-110 transition-transform duration-200">Connect Your Wallet</CardTitle>
@@ -481,7 +480,7 @@ export default function HomePage() {
 
   <Card className="border-green-300 hover:border-green-600 transition-all duration-200 hover:shadow-[0_0_50px_rgba(34,197,94,0.9)] hover:-translate-y-5 group slide-in-left slide-in-delay-2 bg-green-100/70 backdrop-blur-md">
     <CardHeader className="text-center pb-4">
-      <div className="w-20 h-20 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-150 transition-transform duration-200 shadow-xl">
+      <div className="w-15 h-15 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-transform duration-200 shadow-xl">
         <TrendingUp className="w-10 h-10 text-green-700 group-hover:text-green-900 transition-colors duration-200" />
       </div>
       <CardTitle className="text-green-900 text-xl group-hover:scale-110 transition-transform duration-200">Browse & Trade</CardTitle>
@@ -496,7 +495,7 @@ export default function HomePage() {
 
   <Card className="border-green-300 hover:border-green-600 transition-all duration-200 hover:shadow-[0_0_50px_rgba(34,197,94,0.9)] hover:-translate-y-5 group slide-in-left slide-in-delay-3 bg-green-100/70 backdrop-blur-md">
     <CardHeader className="text-center pb-4">
-      <div className="w-20 h-20 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-150 transition-transform duration-200 shadow-xl">
+      <div className="w-15 h-15 bg-gradient-to-br from-green-200 to-emerald-200 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-transform duration-200 shadow-xl">
         <Shield className="w-10 h-10 text-green-700 group-hover:text-green-900 transition-colors duration-200" />
       </div>
       <CardTitle className="text-green-900 text-xl group-hover:scale-110 transition-transform duration-200">Offset & Impact</CardTitle>
@@ -557,82 +556,80 @@ export default function HomePage() {
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
       {/* Amazon Reforestation */}
-      <Card className="min-w-80 border-green-600 bg-gradient-to-br from-green-800 to-emerald-700 hover:shadow-[0_0_35px_rgba(16,185,129,0.7)] hover:-translate-y-2 transition-all duration-300 group scroll-animate scroll-animate-delay-2 rounded-xl overflow-hidden">
-        <div className="h-32 relative overflow-hidden">
+      <Card className="min-w-80 border-green-100 bg-gradient-to-br from-green-100 to-emerald-100 hover:shadow-xl hover:-translate-y-3 transition-all duration-500 ease-out group scroll-animate scroll-animate-delay-2 rounded-xl overflow-hidden">
+        <div className="h-48 relative overflow-hidden group">
           <img
             src="/amazon.webp"
             alt="Amazon Reforestation"
-            className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-90 transition-opacity duration-300"
+            className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-95 group-hover:scale-110 transition-opacity transition-transform duration-500 ease-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          <TreePine className="absolute bottom-2 right-2 w-8 h-8 text-white/90 group-hover:scale-125 transition-transform duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-t from-green-900/20 to-transparent"></div>
+          <TreePine className="absolute bottom-2 right-2 w-8 h-8 text-green-200 group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-out" />
         </div>
         <CardHeader>
-          <CardTitle className="text-white text-lg">Amazon Reforestation</CardTitle>
-          <CardDescription className="text-green-200">Brazil • Forestry</CardDescription>
+          <CardTitle className="text-green-900 text-lg">Amazon Reforestation</CardTitle>
+          <CardDescription className="text-green-700">Brazil • Forestry</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex justify-between items-center">
-            <span className="text-2xl font-bold text-green-100">$12.50</span>
-            <Badge variant="secondary" className="bg-green-700 text-white">
+            <span className="text-2xl font-bold text-green-800">$12.50</span>
+            <Badge variant="secondary" className="bg-green-100 text-green-700">
               Verified
             </Badge>
           </div>
-          <p className="text-sm text-green-200 mt-2">per tonne CO₂</p>
+          <p className="text-sm text-green-600 mt-2">per tonne CO₂</p>
         </CardContent>
       </Card>
 
       {/* Wind Energy */}
-      <Card className="min-w-80 border-blue-600 bg-gradient-to-br from-blue-800 to-cyan-700 hover:shadow-[0_0_35px_rgba(59,130,246,0.7)] hover:-translate-y-2 transition-all duration-300 group scroll-animate scroll-animate-delay-3 rounded-xl overflow-hidden">
-        <div className="h-32 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-60">
-            <svg width="100%" height="100%" viewBox="0 0 200 100" className="text-blue-300">
-              <rect x="40" y="20" width="3" height="60" fill="currentColor" />
-              <rect x="90" y="15" width="3" height="65" fill="currentColor" />
-              <rect x="140" y="25" width="3" height="55" fill="currentColor" />
-            </svg>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          <Globe className="absolute bottom-2 right-2 w-8 h-8 text-white/90 group-hover:scale-125 transition-transform duration-300" />
+      <Card className="min-w-80 border-blue-100 bg-gradient-to-br from-blue-100 to-cyan-100 hover:shadow-xl hover:-translate-y-3 transition-all duration-500 ease-out group scroll-animate scroll-animate-delay-3 rounded-xl overflow-hidden">
+        <div className="h-48 relative overflow-hidden group">
+          <img
+            src="/windmill3.webp"
+            alt="Wind Energy"
+            className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-95 group-hover:scale-110 transition-opacity transition-transform duration-500 ease-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+          <Globe className="absolute bottom-2 right-2 w-8 h-8 text-blue-200 group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-out" />
         </div>
         <CardHeader>
-          <CardTitle className="text-white text-lg">Wind Energy Project</CardTitle>
-          <CardDescription className="text-blue-200">India • Renewable Energy</CardDescription>
+          <CardTitle className="text-green-900 text-lg">Wind Energy Project</CardTitle>
+          <CardDescription className="text-green-700">India • Renewable Energy</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex justify-between items-center">
-            <span className="text-2xl font-bold text-blue-100">$8.75</span>
-            <Badge variant="secondary" className="bg-blue-700 text-white">
+            <span className="text-2xl font-bold text-green-800">$8.75</span>
+            <Badge variant="secondary" className="bg-blue-100 text-blue-700">
               Verified
             </Badge>
           </div>
-          <p className="text-sm text-blue-200 mt-2">per tonne CO₂</p>
+          <p className="text-sm text-green-600 mt-2">per tonne CO₂</p>
         </CardContent>
       </Card>
 
       {/* Waste Management */}
-      <Card className="min-w-80 border-orange-600 bg-gradient-to-br from-orange-800 to-amber-700 hover:shadow-[0_0_35px_rgba(249,115,22,0.7)] hover:-translate-y-2 transition-all duration-300 group scroll-animate scroll-animate-delay-4 rounded-xl overflow-hidden">
-        <div className="h-32 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-50">
-            <svg width="100%" height="100%" viewBox="0 0 200 100" className="text-orange-300">
-              <circle cx="40" cy="35" r="15" stroke="currentColor" strokeWidth="3" fill="none" />
-            </svg>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          <Recycle className="absolute bottom-2 right-2 w-8 h-8 text-white/90 group-hover:scale-125 transition-transform duration-300" />
+      <Card className="min-w-80 border-amber-100 bg-gradient-to-br from-amber-100 to-orange-100 hover:shadow-xl hover:-translate-y-3 transition-all duration-500 ease-out group scroll-animate scroll-animate-delay-4 rounded-xl overflow-hidden">
+        <div className="h-48 relative overflow-hidden group">
+          <img
+            src="/Waste Management.webp"
+            alt="Waste Management"
+            className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-95 group-hover:scale-110 transition-opacity transition-transform duration-500 ease-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent"></div>
+          <Recycle className="absolute bottom-2 right-2 w-8 h-8 text-orange-200 group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-out" />
         </div>
         <CardHeader>
-          <CardTitle className="text-white text-lg">Waste Management</CardTitle>
-          <CardDescription className="text-orange-200">Kenya • Waste Reduction</CardDescription>
+          <CardTitle className="text-green-900 text-lg">Waste Management</CardTitle>
+          <CardDescription className="text-green-700">Kenya • Waste Reduction</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex justify-between items-center">
-            <span className="text-2xl font-bold text-orange-100">$15.20</span>
-            <Badge variant="secondary" className="bg-orange-700 text-white">
+            <span className="text-2xl font-bold text-green-800">$15.20</span>
+            <Badge variant="secondary" className="bg-orange-100 text-orange-700">
               Verified
             </Badge>
           </div>
-          <p className="text-sm text-orange-200 mt-2">per tonne CO₂</p>
+          <p className="text-sm text-green-600 mt-2">per tonne CO₂</p>
         </CardContent>
       </Card>
     </div>
@@ -641,14 +638,12 @@ export default function HomePage() {
       <Button
         size="lg"
         variant="outline"
-        className="border-green-400 text-green-700 hover:bg-green-600 hover:text-white hover:shadow-[0_0_25px_rgba(16,185,129,0.7)] transition-all duration-300"
-      >
+       >
         View All Credits
       </Button>
     </div>
   </div>
 </section>
-
 
 
                 
