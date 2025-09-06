@@ -179,7 +179,7 @@ export default function HomePage() {
               Marketplace
             </a>
             <a href="#how-it-works" className="text-green-700 hover:text-green-900 transition-colors">
-              How It Works 
+              How It Works ??
             </a>
             <a href="#about" className="text-green-700 hover:text-green-900 transition-colors">
               About
