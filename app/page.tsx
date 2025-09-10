@@ -111,7 +111,7 @@ export default function HomePage() {
       <section
   id="how-it-works"
   className="h-screen flex items-center"
-  style={{ backgroundColor: "#394C28" }}
+  style={{ backgroundColor: "#12270C" }}
 >
   <div className="container mx-auto px-8 grid grid-cols-5 gap-12 h-full">
     {/* Left */}
